@@ -1,0 +1,17 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1598
+
+ This plugin enables vim to yank and paste through the multi processes.
+
+ If :call YanktmpYank(), yank string write to tmpfile.
+ And :call YanktmpPaste_p() or YanktmpPaste_P(), paste string from tmpfile.
+
+ Default tmp file is '/tmp/vimyanktmp'
+ If you want to change tmp file.
+ let g:yanktmp_file = '/tmp/example_tmp_file'
+
+==================== file yanktmp.vimrc ====================
+map <silent> sy :call YanktmpYank()<CR>
+map <silent> sp :call YanktmpPaste_p()<CR>
+map <silent> sP :call YanktmpPaste_P()<CR>
+==================== end: yanktmp.vimrc ====================
+
